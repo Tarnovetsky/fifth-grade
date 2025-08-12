@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готов ли ты к 5-му классу?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            margin-bottom: 40px;
+            border-bottom: 3px solid linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            gap: 20px;
+        }
+        
+        .feature {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f8f8f8;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.263);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+        
+        .feature h2 {
+            color: #000;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .feature p {
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .cta {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #ff0000;
+            color: white;
+            border-top: 3px solid #000;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: rgb(255, 0, 0);
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border: 3px solid #ffffff;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.416);
+        }
+        
+        .btn:hover {
+            background-color: white;
+            color: #ff0000;
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.588);
+            border: 3px solid white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .feature {
+                min-width: 100%;
+            }
+            
+            .cta h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Готов ли ты к 5-му классу?</h1>
+            <p class="subtitle">Пройди увлекательный тест и узнай, насколько ты готов к новому учебному году!</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h2>Проверь готовность к 5 классу</h2>
+                <p>Ты сможешь узнать, насколько хорошо морально и физически ты подготовлен к новому учебному году</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h2>Получи результат</h2>
+                <p>После прохождения теста ты сразу узнаешь свой уровень подготовки и получишь рекомендации по тем проблемам, которые стоит решить в новом учебном году.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <h2>Начни 5 класс лучше</h2>
+                <p>Ты будешь знать свои сильные и слабые стороны, что поможет тебе начать 5-й класс с уверенностью и достичь отличных результатов.</p>
+            </div>
+        </div>
+    </div>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Готов проверить свои знания?</h2>
+            <p>Пройди наш увлекательный тест и узнай, насколько ты готов к новому учебному году и новым вызовам 5-го класса!</p>
+            <a href="register.html" class="btn">Начать тест</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Тест "Готов ли ты к 5-му классу?". Made by Tarnovetsky.Team</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Анимация появления элементов при прокрутке
+        document.addEventListener('DOMContentLoaded', function() {
+            const features = document.querySelectorAll('.feature');
+            const ctaButton = document.querySelector('.btn');
+            
+            // Анимация для блоков с функциями
+            features.forEach((feature, index) => {
+                feature.style.opacity = '0';
+                feature.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    feature.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    feature.style.opacity = '1';
+                    feature.style.transform = 'translateY(0)';
+                }, 300 + index * 200);
+            });
+            
+            // Анимация для кнопки
+            ctaButton.style.opacity = '0';
+            setTimeout(() => {
+                ctaButton.style.transition = 'opacity 1s ease, transform 1s ease';
+                ctaButton.style.opacity = '1';
+                ctaButton.style.transform = 'scale(1)';
+            }, 1000);
+            
+            // Плавная анимация кнопки
+            const button = document.querySelector('.btn');
+            button.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            button.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
